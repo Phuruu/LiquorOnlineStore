@@ -1,0 +1,83 @@
+takju001
+	pname : 붉은 원숭이
+	pprice : 9000
+	pinfo: 주종: 살균탁주
+		  도수: 10.80%
+		 용량: 375ml
+	psweet 3, psour 2, pbody 4
+
+takju002
+	pname : 백련 미스티 살균 막걸리
+	pprice : 4500
+	pinfo: 주종: 살균탁주
+		  도수: 7.00%
+		 용량: 375ml
+	psweet 3, psour 2, pbody 3
+
+takju003
+	pname : 얼떨결에 퍼플 X 3병
+	pprice : 27900
+	pinfo: 주종: 살균탁주
+		  도수: 6.00%
+		 용량: 375ml
+	psweet 3, psour 4, pbody 2
+
+takju004
+	pname : 표문 막걸리 X 4병
+	pprice : 14000
+	pinfo: 주종: 탁주
+		  도수: 6.00%
+		 용량: 500ml
+	psweet 3, psour 3, pbody 3
+
+takju005
+	pname : 오희
+	pprice : 23000
+	pinfo: 주종: 탁주
+		  도수: 8.50%
+		 용량: 500ml
+	psweet 4, psour 4, pbody 2
+
+
+takju006
+	pname : 말이야막걸리야 3L 대용량(케그+미니탭)
+토란 막걸리 들어
+	pprice : 50000
+	pinfo: 주종: 탁주
+		  도수: 6%
+		 용량: 3000ml
+	psweet 2, psour 1, pbody 2
+
+takju007
+	pname : 호호
+	pprice : 15000
+	pinfo: 주종: 탁주
+		  도수: 9.00%
+		 용량: 375ml
+	psweet 3, psour 3, pbody 4
+
+
+takju008
+	pname : DOK 애플 막걸리 X 3병
+	pprice : 13500
+	pinfo: 주종: 탁주
+		  도수: 6.0%
+		 용량: 500ml
+	psweet 4, psour 2, pbody 3
+
+takju009
+	pname : 서촌막걸리 12%
+	pprice : 15000
+	pinfo: 주종: 탁주
+		  도수: 12%
+		 용량: 500ml
+	psweet 2, psour 4, pbody 4
+
+takju010
+	pname : 배금도가 수제 막걸리
+	pprice : 7500
+	pinfo: 주종: 탁주
+		  도수: 12.00%
+		 용량: 500ml
+	psweet 2, psour 4, pbody 4
+

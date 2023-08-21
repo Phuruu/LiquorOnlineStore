@@ -1,0 +1,99 @@
+
+.all-body{
+	width: 1180px;
+	margin: 40px;
+	
+}
+#body-wrap{
+	width: 1100px;
+	margin-left: 200px;
+	border: 1px solid #e9e9e9;
+    border-top: 1px solid #000;
+    text-align: center;
+    padding-bottom: 90px;
+    color: #adadad;
+}
+.id-comment{
+	text-align: left;
+	margin: 50px;
+}
+
+.tit{
+	padding-top: 15px;
+    color: #000;
+    font-weight: bold;
+    line-height: 18px;
+}
+.comment{
+	padding-top: 20px;
+    font-size: 11px;
+    color: #8d8d8d;
+    line-height: 18px;
+}
+
+.body-form{
+	padding: 0 0 0 10px;
+    width: 374px;
+    height: 48px;
+    line-height: 48px;
+    border: 1px solid #ddd;
+}
+/***********/
+ label{
+	padding-left: 11px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 375px;
+    height: 50px;
+    color: #adadad;
+    cursor: text;
+} 
+
+.input-text{
+    padding: 2px 0 0 2px;
+    line-height: 31px;
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+}
+
+.frm-list{
+	padding-top: 15px;
+    position: relative;
+    width: 386px;
+    margin: 0 auto;
+}
+
+.forgot{
+	margin: 20px;
+}
+
+/*버튼 영역*/
+.button-area{
+	display: block;
+    margin-bottom: 6px;
+    height: 58px;
+    font-size: 16px;
+    line-height: 58px;
+}
+
+.form-btn-w{
+	display: inline-block;
+    color: #231f20;
+    text-align: center;
+    border: 1px solid #231f20;
+    background: #fff;
+    transition: all 0.3s;
+    width: 200px;
+}
+
+.form-btn{
+	display: inline-block;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #231f20;
+    background: #231f20;
+    transition: all 0.3s;
+    width: 200px;
+}

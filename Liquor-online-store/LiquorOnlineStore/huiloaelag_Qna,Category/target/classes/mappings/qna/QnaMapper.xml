@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.spring.huiloaelag.qna.dao.QnaDAO">
+
+	<select id="getQnaTotalCount" resultType="int">
+		SELECT COUNT(*) AS CNT FROM QNA
+	</select>
+	
+	<!-- 페이지에 해당하는 게시글 조회 -->
+	<!-- <select id="getQnaList" resultType="QnaVO" parameterType="map">
+		SELECT *
+		FROM (SELECT ROWNUM R_NUM, B.*
+		      FROM (SELECT Q.*, U.UNAME
+		          	FROM QNA Q, USERS U
+		          	WHERE Q.UCODE = U.UCODE
+		            <if test='searchCondition == "NAME" and searchKeyword != "" '>
+						AND U.UNAME LIKE '%'|| #{searchKeyword} ||'%'
+					</if>
+		           ) B
+			  )
+		WHERE R_NUM BETWEEN #{begin} AND #{end}
+		ORDER BY QCODE DESC
+	</select> -->
+	
+	<select id="getQnaList" parameterType="QnaVO" resultType="QnaVO">
+		<!-- SELECT * FROM QNA Q, USERS U WHERE Q.UCODE = U.UCODE ORDER BY QCODE DESC -->
+		SELECT * FROM QNA Q, USERS U
+		WHERE Q.UCODE = U.UCODE
+		<if test='searchCondition == "NAME" and searchKeyword != "" '>
+			AND U.UNAME LIKE '%'|| #{searchKeyword} ||'%'
+		</if>
+		ORDER BY QCODE DESC
+	</select>
+	
+	<select id="getQna" parameterType="int" resultType="QnaVO">
+		SELECT * FROM QNA Q, USERS U
+		WHERE Q.UCODE = U.UCODE AND Q.QCODE = #{qCode}
+	</select>
+	
+	<insert id="insertQna" parameterType="QnaVO">
+		INSERT INTO QNA(QCODE, UCODE, QTITLE, QCONTENT, QPWD, QDATE, QCOMMENT)
+		VALUES((SELECT NVL(MAX(QCODE),0) + 1 FROM QNA), '', #{qTitle}, #{qContent}, #{qPwd}, SYSDATE, #{qComment})
+	</insert>
+	
+	<update id="updateQna" parameterType="QnaVO">
+		UPDATE QNA SET QCONTENT = #{qContent}, QDATE = SYSDATE
+		WHERE QCODE = #{qCode}
+	</update>
+	
+	<delete id="deleteQna" parameterType="int">
+		DELETE FROM QNA WHERE QCODE = #{qCode}
+	</delete>
+	
+	<!-- 지역별 카테고리 내용!!! -->
+	<select id="getAreaList" parameterType="string" resultType="ProductVO">
+		SELECT * FROM PRODUCT WHERE PLOCAL = #{pLocal}
+	</select>
+	
+</mapper>

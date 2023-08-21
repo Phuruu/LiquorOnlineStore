@@ -1,0 +1,82 @@
+yakju001
+	pname : 고흥 유자주 12%
+	pprice : 15000
+	pinfo: 주종: 살균약주
+		  도수: 12%
+		 용량: 500ml
+	psweet 3, psour 4, pbody 3
+
+yakju002
+	pname : 술아 국화주
+	pprice : 20000
+	pinfo: 주종: 약주
+		  도수: 15.00%
+		 용량: 375ml
+	psweet 4, psour 2, pbody 4
+
+yakju003
+	pname : 면천 두견주[2병]
+	pprice : 52000
+	pinfo: 주종: 약주
+		  도수: 18.00%
+		 용량: 360ml
+	psweet 4, psour 4, pbody 2
+
+yakju004
+	pname : 복단지
+	pprice : 20000
+	pinfo: 주종: 약주
+		  도수: 14.00%
+		 용량: 350ml
+	psweet 3, psour 4, pbody 3
+
+yakju005
+	pname : 세종대왕어주 약주
+	pprice : 33000
+	pinfo: 주종: 약주
+		  도수: 15.00%
+		 용량: 500ml
+	psweet 2, psour 1, pbody 4
+
+
+yakju006
+	pname : 경성 과하주
+	pprice : 30000
+	pinfo: 주종: 약주
+		  도수: 20.00%
+		 용량: 375ml
+	psweet 5, psour 1, pbody 4
+
+takju007
+	pname : 청비성
+	pprice : 24000
+	pinfo: 주종: 약주
+		  도수: 16.00%
+		 용량: 500ml
+	psweet 3, psour 4, pbody 4
+
+
+takju008
+	pname : 나주 배 약주
+	pprice : 25000
+	pinfo: 주종: 약주
+		  도수: 15.00%
+		 용량: 500ml
+	psweet 4, psour 2, pbody 3
+
+takju009
+	pname : 우리술 오늘 약주
+	pprice : 25000
+	pinfo: 주종: 약주
+		  도수: 15.00%
+		 용량: 700ml
+	psweet 5, psour 3, pbody 3
+
+takju010
+	pname : 동짓달 기나긴 밤
+	pprice : 40000
+	pinfo: 주종: 약주
+		  도수: 16.00%
+		 용량: 500ml
+	psweet 3, psour 3, pbody 4
+

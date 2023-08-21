@@ -1,0 +1,149 @@
+* {
+	box-sizing: border-box;
+}
+
+.all-body {
+	width: 100%;
+}
+
+#body-wrap {
+	width: 1180px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 64px 0;
+	color: #121212;
+	min-height: 635px;
+}
+
+.info {
+	width: 400px;
+	background-color: #eee;
+	border-radius: 10px;
+	margin: 30px auto;
+	text-align: center;
+	padding: 20px 30px;
+}
+
+.info p {
+	font-size: 24px;
+	font-weight: 700;
+	color: #333;
+	padding-bottom: 7px;
+}
+
+.info span {
+	color: #8d8d8d;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+
+/*  */
+.findId-wrapper {
+	width: 335px;
+	user-select: none;
+	/* margin: 0 auto; */
+}
+
+label .user-name {
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	color: rgb(62, 62, 62);
+	font-size: 15px;
+	line-height: 15px;
+}
+
+.msg00 {
+	margin-top: 8px;
+}
+
+.findId-wrapper input {
+	appearance: none;
+	outline: none;
+	width: 100%;
+	min-width: 315px;
+	height: 50px;
+	padding: 14px;
+	border: 1px solid rgb(224, 224, 224);
+	border-radius: 5px;
+	color: rgb(62, 62, 62);
+	font-size: 15px;
+	line-height: 22px;
+	transition: all 0.3s ease 0s;
+}
+
+.msg01 {
+	margin-top: 20px;
+}
+
+label .phoneNum {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: #3e3e3e;
+	font-size: 15px;
+	line-height: 15px;
+}
+
+.findId-wrapper input {
+	appearance: none;
+	outline: none;
+	width: 100%;
+	min-width: 315px;
+	height: 50px;
+	padding: 14px;
+	border: 1px solid rgb(224, 224, 224);
+	border-radius: 5px;
+	color: rgb(62, 62, 62);
+	font-size: 15px;
+	line-height: 22px;
+	transition: all 0.3s ease 0s;
+}
+
+.findId-wrapper input[type="submit"] {
+	border: none;
+	color: rgb(255, 255, 255);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 18px;
+	background: rgb(0, 150, 243);
+	transition: all 0.3s ease 0s;
+}
+
+.findId-wrapper input[type="submit"][disabled] {
+	background: rgb(178, 178, 178);
+}
+/*버튼 영역*/
+.button-area {
+	display: block;
+	margin-bottom: 6px;
+	height: 58px;
+	font-size: 16px;
+	line-height: 58px;
+}
+
+.form-btn-w {
+	display: inline-block;
+	color: #231f20;
+	text-align: center;
+	border: 1px solid #231f20;
+	background: #fff;
+	transition: all 0.3s;
+	width: 200px;
+}
+
+.form-btn {
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+	border: 1px solid #231f20;
+	background: #231f20;
+	transition: all 0.3s;
+	width: 200px;
+}

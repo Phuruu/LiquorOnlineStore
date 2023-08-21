@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.spring.huiloaelag.product.dao.CategoryDAO">
+
+	<!-- 전체상품목록 -->	
+	<select id="getAllList" parameterType="ProductVO" resultType="ProductVO">
+		SELECT * FROM PRODUCT
+	</select>
+	
+	<!-- 카테고리 -->
+	<select id="getProductList" parameterType="ProductVO" resultType="ProductVO">
+		SELECT * FROM PRODUCT ORDER BY PCODE DESC
+		<!-- SELECT * FROM PRODUCT
+		WHERE 1=1 
+		<if test="pCode gte 100 and pCode lte 199">
+			AND PCODE LIKE 1 || '%'
+		</if>
+		<if test="200 lte pCode lte 299">
+			AND PCODE LIKE 2 || '%'
+		</if>
+		<if test="300 lte pCode lte 399">
+			AND PCODE LIKE 3 || '%'
+		</if>
+		<if test="400 lte pCode lte 499">
+			AND PCODE LIKE 4 || '%'
+		</if> -->
+		
+	</select>
+</mapper>

@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+.panel-faq-container {
+  	margin-bottom: -16px;
+}
+.panel-faq-title {
+  	cursor: pointer;
+  	margin-bottom: 14px;
+  	font-weight: bold;
+}
+.panel-faq-answer {
+  height: 0;
+  overflow: hidden;
+  /* 변화가 시작되는 쪽에다가 transition 적용해준다 0 -> 300px 
+  왜? 닫기 버튼을 누를 때 변화가 티남 */
+  transition: all 1s;
+}
+
+.active {
+  display: block;
+  /* 높이를 정해줘야지만 transition이 적용됨 */
+  height: 300px;
+}
+
+/***************/
+
+
+.divider{
+	text-align: center;
+	margin: auto;
+}
+
+.parent {
+	  width:1180px;
+	  margin: auto;
+	  padding: 10px;
+}
+
+.content{
+	width: 1180px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px;
+}
+
+.nContent {
+	margin: 5%;
+}
+
+
+#space{
+	margin: 50px auto 100px;
+}
+/* 공지사항 배경 사진*/
+.forEx{
+	width: 100%;
+    height: 500px;
+   	position: relative;
+    background-image: url(../img/notice-img.jpg);
+    background-position: 70% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    line-height: 1.79; 
+}
+
+/* 게시판 스타일 */
+th, td {
+  border: 1px solid #bbb;
+  padding: 2px 8px 0;
+  text-align: center;
+  border-right: none;
+  border-left: none;
+}
+
+thead > tr > th {
+  font-size: 18px;
+  border-bottom: 2px solid #6D3114;
+  border-top: 2px solid #6D3114;
+}

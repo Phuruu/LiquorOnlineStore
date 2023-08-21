@@ -1,0 +1,144 @@
+@charset "UTF-8";
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	height: 100%;
+	font-weight: 900;
+}
+ul, li {list-style: none;}
+a {
+	text-decoration-line: none;
+}
+table{
+ 	border-collapse:collapse;
+}
+#deleteImg {
+	width: 50px;
+	height: 30px;
+}
+
+#updateImg {
+	width: 50px;
+	height: 30px;
+}
+
+#insertImg {
+	width: 50px;
+	height: 30px;
+}
+.basic {
+	text-align : right;
+}
+.basic > a {
+	position: relative;
+	top: -25px;
+	right: 70px;
+	font-size:10px;
+	padding: 10px 50px;
+	background: red;
+	text-align: center;
+	color: white;
+	
+}
+.basic > a:hover {
+	background: #a00028;	
+}
+.logo {
+	width: 150px;
+	height: 45px;
+	text-align: left;
+}
+.logo > a > img {
+	width: 150%;
+	height: 150%;
+	background: #464646;
+}
+.tab_content {
+		
+	width:10%;
+}
+input[type="radio"] {
+	display: none;
+	
+}
+input[type="radio"] + label {
+    display: inline-block;
+	padding: 20px;
+	width: 185px;
+	background: #464646;
+	font-size: 14px;
+	cursor: pointer;
+	
+}
+input[type="radio"]:checked + label {
+	background: #1E90FF;
+}
+
+input[type="radio"] + label > a {
+	color: white;
+}
+.conbox {
+	position: absolute;
+	top: 80px;
+	left: 240px;
+	width: 85.3%;
+	height: 89.5%;
+	background: #d3d3d3;
+	overflow: hidden;
+	display: none;
+}
+.detail {
+	width: 225px;
+	height: 460px;
+	background: #464646;
+}
+
+.notice_div {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 98.2%;
+	height: 97%;
+	border-radius: 30px;
+	background: white;
+	border: 1px solid red;
+	display: none;
+}
+.noticeTable {
+	position: absolute;
+	top: 50px;
+	left: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 650px;
+	background: white;
+	
+}
+#notice_head {
+	border-top: 1px solid #DEDEDE;
+	border-bottom: 1px solid #DEDEDE;
+}
+.notice_detail {
+	position: absolute;
+	top: 50px;
+	left: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 650px;
+	background: white;
+}
+tr {
+	border-bottom: 1px solid #DEDEDE;
+}
+#notice_head > tr > th {
+	border-left: 0;
+}
+
+input[id="tab01"]:checked ~ .con1 { display: block; }
+input[id="tab02"]:checked ~ .con2 { display: block; }
+input[id="tab03"]:checked ~ .con3 { display: block; }
+input[id="tab04"]:checked ~ .con4 { display: block; }
+input[id="tab05"]:checked ~ .con5 { display: block; }
+input[id="tab06"]:checked ~ .con6, .notice_div { display: block; }
+

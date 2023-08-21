@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<context:component-scan base-package="com.spring.huiloaelag.users" />
+	<context:component-scan base-package="com.spring.huiloaelag.notify" /> 
+
+	<!-- === Spring JDBC 관련 설정 === -->
+	<!-- DataSource 설정  -->
+	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource"
+			destroy-method="close">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver" />
+		<!-- <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe" /> -->
+
+		 <property name="url" value="jdbc:oracle:thin:@192.168.18.27:1521:xe" /> 
+		<!--<property name="username" value="huiloaelag2" />-->
+		<property name="username" value="huiloaelag" />
+		<property name="password" value="1234" />
+	</bean>
+
+	<!-- 스프링 JDBC : JdbcTemplate 객체 생성 -->
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	
+	<!--  =========================== -->
+	<!-- 마이바티스 스프링 연동 설정 -->
+	<bean id="sqlSessionFactory"
+		class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"/>
+		<property name="configLocation" value="classpath:config.xml"/>
+		<property name="mapperLocations" value="classpath:mappings/**/*mapper.xml"></property>
+	</bean>
+	
+	<bean class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="sqlSessionFactory"/>
+	</bean>
+	
+</beans>

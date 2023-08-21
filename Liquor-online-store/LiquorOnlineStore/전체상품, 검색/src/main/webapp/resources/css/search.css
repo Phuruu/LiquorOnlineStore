@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+@import url("//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
+.spoka * { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
+
+*{padding:0; margin:0;}
+a{text-decoration: none; color: black;}
+
+#title{
+    width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+}
+#title>p{
+	margin: 20px 0;
+}
+.itembox{
+	width: 1080px;
+	margin: 0 auto;
+}
+img{
+	width: 250px;
+	height: 350px;
+	display: block;
+	text-align: center;
+}
+
+table{
+	margin: 0 auto;
+	text-align: left;
+	float: left;
+}
+table td{
+	width: 250px;
+	padding: 10px;
+	vertical-align: top;
+}
+table td p{
+	margin: 10px 0;
+	color: #333;
+}
+
+hr{
+	border: 0;
+	height: 1px;
+	background-color: #333;
+}
+
+table td p:nth-child(2) {
+	font-weight: 600;
+	font-size: 15px;
+	color: #6D3114;
+}
